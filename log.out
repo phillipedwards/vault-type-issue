@@ -1,0 +1,238 @@
+I0501 12:59:56.686995   27476 log.go:75] Explicitly ignoring and discarding error: no git repository found from /home/pedwards/repos/customer/snowflake/vault-type-issue
+I0501 12:59:56.998704   27476 log.go:75] *** Starting Update(preview=true) ***
+I0501 12:59:56.999586   27476 log.go:75] gatherPluginsFromProgram(): gathering plugins from language host
+I0501 12:59:57.114527   27476 log.go:75] GetPluginPath(language, go, <nil>): found on $PATH /home/pedwards/.pulumi/bin/pulumi-language-go
+I0501 12:59:57.214802   27476 log.go:75] langhost[go].GetPluginInfo() executing
+I0501 12:59:57.215232   27476 log.go:75] langhost[go].GetRequiredPlugins(proj=vault-type-issue,pwd=/home/pedwards/repos/customer/snowflake/vault-type-issue,program=.) executing
+I0501 12:59:57.496935   27476 log.go:75] langhost[go].GetRequiredPlugins(proj=vault-type-issue,pwd=/home/pedwards/repos/customer/snowflake/vault-type-issue,program=.) success: #versions=1
+I0501 12:59:57.497004   27476 log.go:75] gatherPluginsFromProgram(): plugin go <nil> () is required by language host
+I0501 12:59:57.497015   27476 log.go:75] gatherPluginsFromProgram(): plugin vault 5.11.0 () is required by language host
+I0501 12:59:57.497020   27476 log.go:75] gatherPluginsFromSnapshot(): gathering plugins from snapshot
+I0501 12:59:57.497031   27476 log.go:75] gatherPluginsFromSnapshot(): skipping "urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil", not a provider
+I0501 12:59:57.497043   27476 log.go:75] gatherPluginsFromSnapshot(): plugin vault 5.6.0 is required by first-class provider "urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider"
+I0501 12:59:57.497051   27476 log.go:75] gatherPluginsFromSnapshot(): plugin vault 5.6.0 is required by first-class provider "urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2"
+I0501 12:59:57.497057   27476 log.go:75] gatherPluginsFromSnapshot(): skipping "urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle", not a provider
+I0501 12:59:57.497063   27476 log.go:75] gatherPluginsFromSnapshot(): skipping "urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example", not a provider
+I0501 12:59:57.497069   27476 log.go:75] gatherPluginsFromSnapshot(): skipping "urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretID:AuthBackendRoleSecretID::id", not a provider
+I0501 12:59:57.497090   27476 log.go:75] ensurePluginsAreInstalled(): beginning
+I0501 12:59:57.590458   27476 log.go:75] GetPluginPath(resource, vault, 5.6.0): enabling new plugin behavior
+I0501 12:59:57.590513   27476 log.go:75] SelectCompatiblePlugin(..., vault): beginning
+I0501 12:59:57.590521   27476 log.go:75] SelectCompatiblePlugin(..., vault): failed to find match
+I0501 12:59:57.590615   27476 log.go:75] ensurePluginsAreInstalled(): plugin vault 5.6.0 not installed, doing install
+I0501 12:59:57.590663   27476 log.go:75] installPlugin(vault, 5.6.0): beginning install
+I0501 12:59:57.590671   27476 log.go:75] installPlugin(vault, 5.6.0): initiating download
+I0501 12:59:57.678355   27476 log.go:75] GetPluginPath(language, go, <nil>): found on $PATH /home/pedwards/.pulumi/bin/pulumi-language-go
+I0501 12:59:57.678420   27476 log.go:75] ensurePluginsAreInstalled(): plugin go <nil> already installed
+I0501 12:59:57.766678   27476 log.go:75] GetPluginPath(resource, vault, 5.11.0): enabling new plugin behavior
+I0501 12:59:57.766738   27476 log.go:75] SelectCompatiblePlugin(..., vault): beginning
+I0501 12:59:57.766748   27476 log.go:75] SelectCompatiblePlugin(..., vault): failed to find match
+I0501 12:59:57.766791   27476 log.go:75] ensurePluginsAreInstalled(): plugin vault 5.11.0 not installed, doing install
+I0501 12:59:57.766799   27476 log.go:75] installPlugin(vault, 5.11.0): beginning install
+I0501 12:59:57.766804   27476 log.go:75] installPlugin(vault, 5.11.0): initiating download
+I0501 12:59:57.840239   27476 log.go:75] vault downloading from https://api.github.com/repos/pulumi/pulumi-vault/releases/assets/74870952
+I0501 12:59:57.921139   27476 log.go:75] vault downloading from https://api.github.com/repos/pulumi/pulumi-vault/releases/assets/105284748
+[0mDownloading plugin: 0 B / 21.01 MiB [----------------------------------]   0.00%[0m[0mDownloading plugin: 0 B / 23.79 MiB [----------------------------------]   0.00%[0m[0mDownloading plugin: 7.31 MiB / 21.01 MiB [==========>------------------]  34.80%[0m[0mDownloading plugin: 8.59 MiB / 23.79 MiB [==========>------------------]  36.12%[0m[0mDownloading plugin: 17.34 MiB / 21.01 MiB [=======================>----]  82.55%[0m[0mDownloading plugin: 18.36 MiB / 23.79 MiB [=====================>------]  77.18%[0m[0mDownloading plugin: 21.01 MiB / 21.01 MiB [=========================] 100.00% 0s[0m
+[resource plugin vault-5.6.0] installing
+I0501 12:59:58.681287   27476 log.go:75] installPlugin(vault, 5.6.0): extracting tarball to installation directory
+[0mDownloading plugin: 23.79 MiB / 23.79 MiB [=========================] 100.00% 0s[0m
+[resource plugin vault-5.11.0] installing
+I0501 12:59:58.713753   27476 log.go:75] installPlugin(vault, 5.11.0): extracting tarball to installation directory
+I0501 12:59:58.960404   27476 log.go:75] Explicitly ignoring and discarding error: close /tmp/pulumi-plugin-tar4196783297: file already closed
+I0501 12:59:58.960463   27476 log.go:75] installPlugin(vault, 5.6.0): installation complete
+I0501 12:59:59.025922   27476 log.go:75] Explicitly ignoring and discarding error: close /tmp/pulumi-plugin-tar782018551: file already closed
+I0501 12:59:59.025976   27476 log.go:75] installPlugin(vault, 5.11.0): installation complete
+I0501 12:59:59.028998   27476 log.go:75] ensurePluginsAreInstalled(): completed
+I0501 12:59:59.029059   27476 log.go:75] computeDefaultProviderPlugins(): considering go
+I0501 12:59:59.029070   27476 log.go:75] computeDefaultProviderPlugins(): skipping go, not a resource provider
+I0501 12:59:59.029078   27476 log.go:75] computeDefaultProviderPlugins(): considering vault-5.11.0
+I0501 12:59:59.029084   27476 log.go:75] computeDefaultProviderPlugins(): plugin vault-5.11.0 selected for package vault (first seen)
+I0501 12:59:59.029090   27476 log.go:69] computeDefaultProviderPlugins(): summary of default plugins:
+I0501 12:59:59.029097   27476 log.go:75]   vault           = 5.11.0
+I0501 12:59:59.029152   27476 log.go:75] provider(urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil): 
+I0501 12:59:59.118225   27476 log.go:75] GetPluginPath(resource, vault, 5.6.0): enabling new plugin behavior
+I0501 12:59:59.118285   27476 log.go:75] SelectCompatiblePlugin(..., vault): beginning
+I0501 12:59:59.118297   27476 log.go:75] SelectCompatiblePlugin(..., vault): best plugin vault-5.6.0: semver match
+I0501 12:59:59.118303   27476 log.go:75] SelectCompatiblePlugin(..., vault): skipping plugin vault-5.11.0: semver mismatch
+I0501 12:59:59.118307   27476 log.go:75] SelectCompatiblePlugin(..., vault): selecting plugin 'vault-5.6.0': best match 
+I0501 12:59:59.118319   27476 log.go:75] GetPluginPath(resource, vault, 5.6.0): found in cache at /home/pedwards/.pulumi/plugins/resource-vault-v5.6.0/pulumi-resource-vault
+I0501 12:59:59.234516   27476 log.go:75] Provider[vault, 0xc0014bcc30].GetPluginInfo() executing
+I0501 12:59:59.234927   27476 log.go:75] Provider[vault, 0xc0014bcc30].Configure() executing (#vars=6)
+I0501 12:59:59.235033   27476 log.go:75] loaded provider urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider::7981f0de-db4b-43b3-8cad-6bc651a3763b
+I0501 12:59:59.245722   27476 log.go:75] Using Vault token with the following policies: root
+I0501 12:59:59.319373   27476 log.go:75] GetPluginPath(resource, vault, 5.6.0): enabling new plugin behavior
+I0501 12:59:59.319431   27476 log.go:75] SelectCompatiblePlugin(..., vault): beginning
+I0501 12:59:59.319442   27476 log.go:75] SelectCompatiblePlugin(..., vault): best plugin vault-5.6.0: semver match
+I0501 12:59:59.319448   27476 log.go:75] SelectCompatiblePlugin(..., vault): skipping plugin vault-5.11.0: semver mismatch
+I0501 12:59:59.319452   27476 log.go:75] SelectCompatiblePlugin(..., vault): selecting plugin 'vault-5.6.0': best match 
+I0501 12:59:59.319498   27476 log.go:75] GetPluginPath(resource, vault, 5.6.0): found in cache at /home/pedwards/.pulumi/plugins/resource-vault-v5.6.0/pulumi-resource-vault
+I0501 12:59:59.438992   27476 log.go:75] Provider[vault, 0xc0015e12c0].GetPluginInfo() executing
+I0501 12:59:59.439382   27476 log.go:75] Provider[vault, 0xc0015e12c0].Configure() executing (#vars=6)
+I0501 12:59:59.439466   27476 log.go:75] loaded provider urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7
+I0501 12:59:59.439478   27476 log.go:75] provider(urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle): urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7
+I0501 12:59:59.439484   27476 log.go:75] provider(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example): urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7
+I0501 12:59:59.439490   27476 log.go:75] provider(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretID:AuthBackendRoleSecretID::id): urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7
+I0501 12:59:59.439652   27476 log.go:75] deploymentExecutor.Execute(...): waiting for incoming events
+I0501 12:59:59.439715   27476 log.go:75] langhost[go].Run(pwd=/home/pedwards/repos/customer/snowflake/vault-type-issue,program=.,#args=0,proj=vault-type-issue,stack=phil,#config=0,dryrun=true) executing
+I0501 12:59:59.439731   27476 log.go:75] StepExecutor worker(-2): worker coming online
+I0501 12:59:59.439806   27476 log.go:75] StepExecutor worker(-2): worker waiting for incoming chains
+I0501 12:59:59.448960   27476 log.go:75] Using Vault token with the following policies: root
+I0501 13:00:00.807317   27476 log.go:75] ResourceMonitor.SupportsFeature(id: resourceReferences) = true
+I0501 13:00:00.807714   27476 log.go:75] ResourceMonitor.SupportsFeature(id: outputValues) = true
+I0501 13:00:00.808079   27476 log.go:75] ResourceMonitor.SupportsFeature(id: deletedWith) = true
+I0501 13:00:00.808392   27476 log.go:75] ResourceMonitor.SupportsFeature(id: aliasSpecs) = true
+I0501 13:00:00.809054   27476 log.go:75] ResourceMonitor.RegisterResource received: t=pulumi:pulumi:Stack, name=vault-type-issue-phil, custom=false, #props=0, parent=, protect=false, provider=, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts=, providers=map[], replaceOnChanges=[], retainOnDelete=false, deletedWith=
+I0501 13:00:00.809121   27476 log.go:75] EvalSourceIterator produced a registration: t=pulumi:pulumi:Stack,name=vault-type-issue-phil,#props=0
+I0501 13:00:00.809134   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0501 13:00:00.809140   27476 log.go:75] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0501 13:00:00.809160   27476 log.go:75] Planner decided not to update 'urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil' after diff (same) (inputs=map[])
+I0501 13:00:00.809185   27476 log.go:75] Checking step same for urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil
+I0501 13:00:00.809214   27476 log.go:75] StepExecutor worker(-2): worker received chain for execution
+I0501 13:00:00.809257   27476 log.go:75] StepExecutor worker(-2): worker waiting for incoming chains
+I0501 13:00:00.809286   27476 log.go:75] StepExecutor worker(0): launching oneshot worker
+I0501 13:00:00.809330   27476 log.go:75] StepExecutor worker(0): applying step same on urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil (preview true)
+I0501 13:00:00.809364   27476 log.go:75] StepExecutor worker(0): step same on urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil retired
+I0501 13:00:00.809391   27476 log.go:75] stripping unknowns from RegisterResource response for urn urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil
+I0501 13:00:00.809407   27476 log.go:75] ResourceMonitor.RegisterResource operation finished: t=pulumi:pulumi:Stack, urn=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, #outs=0
+I0501 13:00:00.809890   27476 log.go:75] ResourceMonitor.RegisterResourceOutputs received: urn=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, #outs=0
+I0501 13:00:00.809937   27476 log.go:75] EvalSourceIterator produced a completion: urn=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil,#outs=0
+I0501 13:00:00.809965   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0501 13:00:00.809987   27476 log.go:75] deploymentExecutor.handleSingleEvent(...): received register resource outputs
+I0501 13:00:00.810007   27476 log.go:75] StepExecutor worker(-1): registered resource outputs urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil: old=#0, new=#0
+I0501 13:00:00.810023   27476 log.go:75] ResourceMonitor.RegisterResourceOutputs operation finished: urn=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, #outs=0
+I0501 13:00:00.810037   27476 log.go:75] ResourceMonitor.RegisterResource received: t=pulumi:providers:vault, name=provider, custom=true, #props=6, parent=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, protect=false, provider=, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts=, providers=map[], replaceOnChanges=[], retainOnDelete=false, deletedWith=
+I0501 13:00:00.810084   27476 log.go:75] EvalSourceIterator produced a registration: t=pulumi:providers:vault,name=provider,#props=6
+I0501 13:00:00.810099   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0501 13:00:00.810104   27476 log.go:75] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0501 13:00:00.810120   27476 log.go:75] ProviderRegistry.Check(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider) executing (#olds=6,#news=6)
+I0501 13:00:00.904381   27476 log.go:75] GetPluginPath(resource, vault, 5.11.0): enabling new plugin behavior
+I0501 13:00:00.904441   27476 log.go:75] SelectCompatiblePlugin(..., vault): beginning
+I0501 13:00:00.904453   27476 log.go:75] SelectCompatiblePlugin(..., vault): skipping plugin vault-5.6.0: semver mismatch
+I0501 13:00:00.904459   27476 log.go:75] SelectCompatiblePlugin(..., vault): best plugin vault-5.11.0: semver match
+I0501 13:00:00.904463   27476 log.go:75] SelectCompatiblePlugin(..., vault): selecting plugin 'vault-5.11.0': best match 
+I0501 13:00:00.904474   27476 log.go:75] GetPluginPath(resource, vault, 5.11.0): found in cache at /home/pedwards/.pulumi/plugins/resource-vault-v5.11.0/pulumi-resource-vault
+I0501 13:00:01.038257   27476 log.go:75] Provider[vault, 0xc001685310].GetPluginInfo() executing
+I0501 13:00:01.038898   27476 log.go:75] Provider[vault, 0xc001685310].CheckConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider) executing (#olds=6,#news=6)
+I0501 13:00:01.039556   27476 log.go:75] Provider[vault, 0xc001685310].CheckConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider) unimplemented rpc: returning news as is
+I0501 13:00:01.039607   27476 log.go:75] setProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0501 13:00:01.039640   27476 log.go:75] ProviderRegistry.Diff(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider,7981f0de-db4b-43b3-8cad-6bc651a3763b): executing (#olds=6,#news=6)
+I0501 13:00:01.039654   27476 log.go:75] GetProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0501 13:00:01.039662   27476 log.go:75] Provider[vault, 0xc001685310].DiffConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider) executing (#olds=6,#news=6)
+I0501 13:00:01.040185   27476 log.go:75] Provider[vault, 0xc001685310].DiffConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider) unimplemented rpc: returning DiffUnknown with no replaces
+I0501 13:00:01.040247   27476 log.go:75] ProviderRegistry.Diff(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider,7981f0de-db4b-43b3-8cad-6bc651a3763b): executed (2, []resource.PropertyKey(nil))
+I0501 13:00:01.040272   27476 log.go:75] Planner decided to update 'urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider' (oldprops=map[address:{http://127.0.0.1:8200} maxLeaseTtlSeconds:{1200} maxRetries:{2} skipTlsVerify:{false} token:{hvs.JNtqfYVdz2Lnrbfyskcob1rE} version:{5.6.0}] inputs=map[address:{http://127.0.0.1:8200} maxLeaseTtlSeconds:{1200} maxRetries:{2} skipTlsVerify:{false} token:{hvs.JNtqfYVdz2Lnrbfyskcob1rE} version:{5.11.0}])
+I0501 13:00:01.040281   27476 log.go:75] Checking step update for urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider
+I0501 13:00:01.040309   27476 log.go:75] StepExecutor worker(-2): worker received chain for execution
+I0501 13:00:01.040319   27476 log.go:75] StepExecutor worker(-2): worker waiting for incoming chains
+I0501 13:00:01.040330   27476 log.go:75] StepExecutor worker(1): launching oneshot worker
+I0501 13:00:01.040375   27476 log.go:75] StepExecutor worker(1): applying step update on urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider (preview true)
+I0501 13:00:01.040416   27476 log.go:75] ProviderRegistry.Update(7981f0de-db4b-43b3-8cad-6bc651a3763b,urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider) executing (#olds=6,#news=6)
+I0501 13:00:01.040426   27476 log.go:75] GetProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0501 13:00:01.040433   27476 log.go:75] Provider[vault, 0xc001685310].Configure() executing (#vars=6)
+I0501 13:00:01.040473   27476 log.go:75] setProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider::7981f0de-db4b-43b3-8cad-6bc651a3763b)
+I0501 13:00:01.040515   27476 log.go:75] StepExecutor worker(1): step update on urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider retired
+I0501 13:00:01.040543   27476 log.go:75] stripping unknowns from RegisterResource response for urn urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider
+I0501 13:00:01.040570   27476 log.go:75] ResourceMonitor.RegisterResource operation finished: t=pulumi:providers:vault, urn=urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider, #outs=6
+I0501 13:00:01.041143   27476 log.go:75] ResourceMonitor.RegisterResource received: t=pulumi:providers:vault, name=provider2, custom=true, #props=6, parent=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, protect=false, provider=, deps=[urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts=, providers=map[], replaceOnChanges=[], retainOnDelete=false, deletedWith=
+I0501 13:00:01.041197   27476 log.go:75] EvalSourceIterator produced a registration: t=pulumi:providers:vault,name=provider2,#props=6
+I0501 13:00:01.041208   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0501 13:00:01.041213   27476 log.go:75] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0501 13:00:01.041229   27476 log.go:75] ProviderRegistry.Check(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2) executing (#olds=6,#news=6)
+I0501 13:00:01.044911   27476 log.go:75] Using Vault token with the following policies: root
+I0501 13:00:01.142230   27476 log.go:75] GetPluginPath(resource, vault, 5.11.0): enabling new plugin behavior
+I0501 13:00:01.142292   27476 log.go:75] SelectCompatiblePlugin(..., vault): beginning
+I0501 13:00:01.142303   27476 log.go:75] SelectCompatiblePlugin(..., vault): skipping plugin vault-5.6.0: semver mismatch
+I0501 13:00:01.142311   27476 log.go:75] SelectCompatiblePlugin(..., vault): best plugin vault-5.11.0: semver match
+I0501 13:00:01.142327   27476 log.go:75] SelectCompatiblePlugin(..., vault): selecting plugin 'vault-5.11.0': best match 
+I0501 13:00:01.142338   27476 log.go:75] GetPluginPath(resource, vault, 5.11.0): found in cache at /home/pedwards/.pulumi/plugins/resource-vault-v5.11.0/pulumi-resource-vault
+I0501 13:00:01.279975   27476 log.go:75] Provider[vault, 0xc0018d7360].GetPluginInfo() executing
+I0501 13:00:01.280315   27476 log.go:75] Provider[vault, 0xc0018d7360].CheckConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2) executing (#olds=6,#news=6)
+I0501 13:00:01.280976   27476 log.go:75] Provider[vault, 0xc0018d7360].CheckConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2) unimplemented rpc: returning news as is
+I0501 13:00:01.281029   27476 log.go:75] setProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0501 13:00:01.281045   27476 log.go:75] ProviderRegistry.Diff(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2,c4cff9ee-9edf-4719-b251-6445206cfca7): executing (#olds=6,#news=6)
+I0501 13:00:01.281052   27476 log.go:75] GetProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0501 13:00:01.281060   27476 log.go:75] Provider[vault, 0xc0018d7360].DiffConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2) executing (#olds=6,#news=6)
+I0501 13:00:01.281406   27476 log.go:75] Provider[vault, 0xc0018d7360].DiffConfig(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2) unimplemented rpc: returning DiffUnknown with no replaces
+I0501 13:00:01.281451   27476 log.go:75] ProviderRegistry.Diff(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2,c4cff9ee-9edf-4719-b251-6445206cfca7): executed (2, []resource.PropertyKey(nil))
+I0501 13:00:01.281475   27476 log.go:75] Planner decided to update 'urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2' (oldprops=map[address:{http://127.0.0.1:8200} maxLeaseTtlSeconds:{1200} maxRetries:{2} skipTlsVerify:{false} token:{hvs.JNtqfYVdz2Lnrbfyskcob1rE} version:{5.6.0}] inputs=map[address:{http://127.0.0.1:8200} maxLeaseTtlSeconds:{1200} maxRetries:{2} skipTlsVerify:{false} token:{hvs.JNtqfYVdz2Lnrbfyskcob1rE} version:{5.11.0}])
+I0501 13:00:01.281484   27476 log.go:75] Checking step update for urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2
+I0501 13:00:01.281494   27476 log.go:75] StepExecutor worker(-2): worker received chain for execution
+I0501 13:00:01.281500   27476 log.go:75] StepExecutor worker(-2): worker waiting for incoming chains
+I0501 13:00:01.281510   27476 log.go:75] StepExecutor worker(2): launching oneshot worker
+I0501 13:00:01.281534   27476 log.go:75] StepExecutor worker(2): applying step update on urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2 (preview true)
+I0501 13:00:01.281560   27476 log.go:75] ProviderRegistry.Update(c4cff9ee-9edf-4719-b251-6445206cfca7,urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2) executing (#olds=6,#news=6)
+I0501 13:00:01.281572   27476 log.go:75] GetProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::04da6b54-80e4-46f7-96ec-b56ff0331ba9)
+I0501 13:00:01.281579   27476 log.go:75] Provider[vault, 0xc0018d7360].Configure() executing (#vars=6)
+I0501 13:00:01.281604   27476 log.go:75] setProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7)
+I0501 13:00:01.281623   27476 log.go:75] StepExecutor worker(2): step update on urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2 retired
+I0501 13:00:01.281632   27476 log.go:75] stripping unknowns from RegisterResource response for urn urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2
+I0501 13:00:01.281638   27476 log.go:75] ResourceMonitor.RegisterResource operation finished: t=pulumi:providers:vault, urn=urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2, #outs=6
+I0501 13:00:01.282108   27476 log.go:75] parseProviderRequest(vault): semver version is the empty string
+I0501 13:00:01.282179   27476 log.go:75] ResourceMonitor.RegisterResource received: t=vault:index/authBackend:AuthBackend, name=approle, custom=true, #props=1, parent=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, protect=false, provider=urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7, deps=[], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts=, providers=map[], replaceOnChanges=[], retainOnDelete=false, deletedWith=
+I0501 13:00:01.282214   27476 log.go:75] EvalSourceIterator produced a registration: t=vault:index/authBackend:AuthBackend,name=approle,#props=1
+I0501 13:00:01.282225   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0501 13:00:01.282230   27476 log.go:75] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0501 13:00:01.282243   27476 log.go:75] GetProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7)
+I0501 13:00:01.282254   27476 log.go:75] Provider[vault, 0xc0018d7360].Check(urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle) executing (#olds=2,#news=1
+I0501 13:00:01.285709   27476 log.go:75] Using Vault token with the following policies: root
+I0501 13:00:01.287396   27476 log.go:75] Provider[vault, 0xc0018d7360].Check(urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle) success: inputs=#3 failures=#0
+I0501 13:00:01.287457   27476 log.go:75] Provider[vault, 0xc0018d7360].Diff(urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle,approle): executing (#olds=8,#news=3)
+I0501 13:00:01.288979   27476 log.go:75] Provider[vault, 0xc0018d7360].Diff(urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle,approle) success: changes=1 #replaces=[] #stables=[local namespace type] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0501 13:00:01.289048   27476 log.go:75] Planner decided not to update 'urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle' after diff (same) (inputs=map[__defaults:{[{disableRemount}]} disableRemount:{false} type:{approle}])
+I0501 13:00:01.289062   27476 log.go:75] Checking step same for urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle
+I0501 13:00:01.289092   27476 log.go:75] StepExecutor worker(-2): worker received chain for execution
+I0501 13:00:01.289103   27476 log.go:75] StepExecutor worker(-2): worker waiting for incoming chains
+I0501 13:00:01.289115   27476 log.go:75] StepExecutor worker(3): launching oneshot worker
+I0501 13:00:01.289140   27476 log.go:75] StepExecutor worker(3): applying step same on urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle (preview true)
+I0501 13:00:01.289163   27476 log.go:75] StepExecutor worker(3): step same on urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle retired
+I0501 13:00:01.289172   27476 log.go:75] stripping unknowns from RegisterResource response for urn urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle
+I0501 13:00:01.289179   27476 log.go:75] ResourceMonitor.RegisterResource operation finished: t=vault:index/authBackend:AuthBackend, urn=urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle, #outs=8
+I0501 13:00:01.289887   27476 log.go:75] parseProviderRequest(vault): semver version is the empty string
+I0501 13:00:01.289959   27476 log.go:75] ResourceMonitor.RegisterResource received: t=vault:appRole/authBackendRole:AuthBackendRole, name=example, custom=true, #props=3, parent=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, protect=false, provider=urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7, deps=[urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[], customTimeouts=, providers=map[], replaceOnChanges=[], retainOnDelete=false, deletedWith=
+I0501 13:00:01.289986   27476 log.go:75] EvalSourceIterator produced a registration: t=vault:appRole/authBackendRole:AuthBackendRole,name=example,#props=3
+I0501 13:00:01.289995   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0501 13:00:01.290010   27476 log.go:75] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0501 13:00:01.290024   27476 log.go:75] GetProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7)
+I0501 13:00:01.290039   27476 log.go:75] Provider[vault, 0xc0018d7360].Check(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example) executing (#olds=6,#news=3
+I0501 13:00:01.290825   27476 log.go:75] Provider[vault, 0xc0018d7360].Check(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example) success: inputs=#6 failures=#0
+I0501 13:00:01.290881   27476 log.go:75] Provider[vault, 0xc0018d7360].Diff(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example,auth/approle/role/test-role): executing (#olds=17,#news=6)
+I0501 13:00:01.292519   27476 log.go:75] Provider[vault, 0xc0018d7360].Diff(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example,auth/approle/role/test-role) success: changes=1 #replaces=[] #stables=[namespace backend roleName] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0501 13:00:01.292579   27476 log.go:75] Planner decided not to update 'urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example' after diff (same) (inputs=map[__defaults:{[{bindSecretId} {tokenType}]} backend:{approle} bindSecretId:{true} roleName:{test-role} tokenPolicies:{[{default} {dev} {prod}]} tokenType:{default}])
+I0501 13:00:01.292593   27476 log.go:75] Checking step same for urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example
+I0501 13:00:01.292621   27476 log.go:75] StepExecutor worker(-2): worker received chain for execution
+I0501 13:00:01.292632   27476 log.go:75] StepExecutor worker(-2): worker waiting for incoming chains
+I0501 13:00:01.292654   27476 log.go:75] StepExecutor worker(4): launching oneshot worker
+I0501 13:00:01.292713   27476 log.go:75] StepExecutor worker(4): applying step same on urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example (preview true)
+I0501 13:00:01.292774   27476 log.go:75] StepExecutor worker(4): step same on urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example retired
+I0501 13:00:01.292817   27476 log.go:75] stripping unknowns from RegisterResource response for urn urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example
+I0501 13:00:01.292829   27476 log.go:75] ResourceMonitor.RegisterResource operation finished: t=vault:appRole/authBackendRole:AuthBackendRole, urn=urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example, #outs=17
+I0501 13:00:01.293709   27476 log.go:75] parseProviderRequest(vault): semver version is the empty string
+I0501 13:00:01.293794   27476 log.go:75] ResourceMonitor.RegisterResource received: t=vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId, name=id, custom=true, #props=3, parent=urn:pulumi:phil::vault-type-issue::pulumi:pulumi:Stack::vault-type-issue-phil, protect=false, provider=urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7, deps=[urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRole:AuthBackendRole::example urn:pulumi:phil::vault-type-issue::vault:index/authBackend:AuthBackend::approle], deleteBeforeReplace=<nil>, ignoreChanges=[], aliases=[{  vault:appRole/authBackendRoleSecretID:AuthBackendRoleSecretID   }], customTimeouts=, providers=map[], replaceOnChanges=[], retainOnDelete=false, deletedWith=
+I0501 13:00:01.293837   27476 log.go:75] EvalSourceIterator produced a registration: t=vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId,name=id,#props=3
+I0501 13:00:01.293895   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? false, <nil>)
+I0501 13:00:01.293904   27476 log.go:75] deploymentExecutor.handleSingleEvent(...): received RegisterResourceEvent
+I0501 13:00:01.293920   27476 log.go:75] GetProvider(urn:pulumi:phil::vault-type-issue::pulumi:providers:vault::provider2::c4cff9ee-9edf-4719-b251-6445206cfca7)
+I0501 13:00:01.293932   27476 log.go:75] Provider[vault, 0xc0018d7360].Check(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id) executing (#olds=4,#news=3
+I0501 13:00:01.294535   27476 log.go:75] Provider[vault, 0xc0018d7360].Check(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id) success: inputs=#4 failures=#0
+I0501 13:00:01.294585   27476 log.go:75] Provider[vault, 0xc0018d7360].Diff(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id,backend=approle::role=test-role::accessor=f70f562d-e8eb-c277-0ca2-04b8f4496638): executing (#olds=7,#news=4)
+I0501 13:00:01.294622   27476 log.go:75] marshalling secret value as raw value as opts.KeepSecrets is false
+I0501 13:00:01.295460   27476 log.go:75] Provider[vault, 0xc0018d7360].Diff(urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id,backend=approle::role=test-role::accessor=f70f562d-e8eb-c277-0ca2-04b8f4496638) success: changes=1 #replaces=[] #stables=[wrappingTtl roleName cidrLists metadata namespace secretId backend withWrappedAccessor] delbefrepl=false, diffs=#[], detaileddiff=map[]
+I0501 13:00:01.295522   27476 log.go:75] Planner decided not to update 'urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id' after diff (same) (inputs=map[__defaults:{[]} backend:{approle} metadata:{{"hello":"world"}} roleName:{test-role}])
+I0501 13:00:01.295535   27476 log.go:75] Checking step same for urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id
+I0501 13:00:01.295562   27476 log.go:75] StepExecutor worker(-2): worker received chain for execution
+I0501 13:00:01.295640   27476 log.go:75] StepExecutor worker(-2): worker waiting for incoming chains
+I0501 13:00:01.295742   27476 log.go:75] StepExecutor worker(5): launching oneshot worker
+I0501 13:00:01.295989   27476 log.go:75] StepExecutor worker(5): applying step same on urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id (preview true)
+I0501 13:00:01.296403   27476 log.go:75] StepExecutor worker(5): step same on urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id retired
+I0501 13:00:01.296422   27476 log.go:75] stripping unknowns from RegisterResource response for urn urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id
+I0501 13:00:01.296430   27476 log.go:75] ResourceMonitor.RegisterResource operation finished: t=vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId, urn=urn:pulumi:phil::vault-type-issue::vault:appRole/authBackendRoleSecretId:AuthBackendRoleSecretId::id, #outs=7
+I0501 13:00:01.301844   27476 log.go:75] langhost[go].RunPlan(pwd=/home/pedwards/repos/customer/snowflake/vault-type-issue,program=.,...,dryrun=true) success: progerr=
+I0501 13:00:01.303149   27476 log.go:75] deploymentExecutor.Execute(...): incoming event (nil? true, <nil>)
+I0501 13:00:01.303201   27476 log.go:75] performDeletes(...): beginning
+I0501 13:00:01.303213   27476 log.go:75] Planner trusts dependency graph, scheduling deletions in parallel
+I0501 13:00:01.303239   27476 log.go:75] StepExecutor worker(-1): StepExecutor.waitForCompletion(): waiting for worker threads to exit
+I0501 13:00:01.303258   27476 log.go:75] StepExecutor worker(-2): worker received nil chain, exiting
+I0501 13:00:01.303264   27476 log.go:75] StepExecutor worker(-1): StepExecutor.waitForCompletion(): worker threads all exited
+I0501 13:00:01.303268   27476 log.go:75] deploymentExecutor.Execute(...): step executor has completed
+I0501 13:00:01.303335   27476 log.go:75] deploymentExecutor.Execute(...): exiting provider canceller
+I0501 13:00:01.310041   27476 log.go:75] Explicitly ignoring and discarding error: rpc error: code = Canceled desc = grpc: the client connection is closing
+I0501 13:00:01.310157   27476 log.go:75] *** Update(preview=true) complete ***
